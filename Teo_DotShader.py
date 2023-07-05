@@ -64,5 +64,5 @@ def openDialog():
 window = cmds.window(title = 'Dotshader_maker')
 cmds.columnLayout(adjustableColumn=True)
 cmds.frameLayout(label='Make Dotshader', labelAlign='top')
-cmds.button(label='Create Material(Please select basecolor texture', command=createMaterial)
+cmds.button(label='Create Material(Please select basecolor texture)', command=createMaterial)
 cmds.showWindow(window)
