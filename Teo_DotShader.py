@@ -42,7 +42,7 @@ def makeTemplate(textures):
     connectNode(colorcorrect, '.outColor', blendcolor, '.B')
     connectNode(projection, '.outColor', blendcolor, '.A')
     connectNode(base, '.outColor', colorcorrect, '.input')
-    connectNode(basep2d, '.outUV', ramp, '.uvCoord')
+    connectNode(basep2d, '.outUV', base, '.uvCoord')
     connectNode(bayer, '.outColor', projection, '.projectionColor')
     connectNode(bayerp2d, '.outUV', bayer, '.uvCoord')
 
